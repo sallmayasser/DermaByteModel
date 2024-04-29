@@ -1,0 +1,6 @@
+ flask
+ tensorflow 
+ tensorflow_hub 
+ numpy 
+ cv2
+ urllib.request
