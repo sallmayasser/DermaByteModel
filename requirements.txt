@@ -3,3 +3,4 @@ tensorflow==2.14
 tensorflow-hub==0.15
 tf_keras
 numpy
+uvicorn
