@@ -23,7 +23,7 @@ def predict_skin_disease(image_url):
     class_names = ['nail-fungus', 'ringworm', 'shingles', 'impetigo',
                    'athlete-foot', 'chickenpox', 'cutaneous-larva-migrans', 'cellulitis']
     m = tf.keras.models.load_model(
-        modelPath , custom_objects={'KerasLayer': hub.KerasLayer})
+        "./derma.h5" , custom_objects={'KerasLayer': hub.KerasLayer})
     img = load_image_from_url(image_url)
     img_resized = cv2.resize(img, (224, 224))
     ins = np.array([img_resized]) / 255.0
@@ -42,5 +42,5 @@ def predict_endpoint():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port = 8000 ,debug=True)
     print('Server Running')
