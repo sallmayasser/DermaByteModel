@@ -1,4 +1,4 @@
---upgrade pip
+
 flask
  tensorflow 
  tensorflow_hub 
