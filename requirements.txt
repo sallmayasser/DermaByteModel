@@ -1,6 +1,8 @@
- flask
+--upgrade pip
+flask
  tensorflow 
  tensorflow_hub 
  numpy 
- cv2
+ opencv-python
  urllib.request
+ 
