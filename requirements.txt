@@ -1,5 +1,5 @@
 opencv-python-headless
- urllib.request
+ urllib
 flask
  tensorflow 
  tensorflow_hub 
