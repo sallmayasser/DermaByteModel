@@ -7,6 +7,7 @@ import urllib.request
 
 app = Flask(__name__)
 
+modelPath =r"derma.h5"
 
 def load_image_from_url(url):
     # Download the image from the URL
@@ -22,7 +23,7 @@ def predict_skin_disease(image_url):
     class_names = ['nail-fungus', 'ringworm', 'shingles', 'impetigo',
                    'athlete-foot', 'chickenpox', 'cutaneous-larva-migrans', 'cellulitis']
     m = tf.keras.models.load_model(
-        '/content/drive/MyDrive/Colab Notebooks/final model/derma.h5', custom_objects={'KerasLayer': hub.KerasLayer})
+        modelPath , custom_objects={'KerasLayer': hub.KerasLayer})
     img = load_image_from_url(image_url)
     img_resized = cv2.resize(img, (224, 224))
     ins = np.array([img_resized]) / 255.0
