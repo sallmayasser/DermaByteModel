@@ -1,8 +1,7 @@
-
+opencv-python-headless
 flask
  tensorflow 
  tensorflow_hub 
  numpy 
- opencv-python
  urllib.request
  
