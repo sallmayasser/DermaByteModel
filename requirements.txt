@@ -5,4 +5,4 @@ tensorflow==2.14
 tensorflow-hub==0.15
 tf_keras
 numpy
-
+opencv-python-headless==4.8.1.78
